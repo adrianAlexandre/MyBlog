@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-12">
+    <div class="line-number">
+      <span class="line-number-text">{{lineNumber}}</span>
+    </div>
+
+    <div [innerHtml]="lineContent" [id]="lineNumber.toString()" class="code code-text">
+    </div>
+
+
+  </div>
