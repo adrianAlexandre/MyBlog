@@ -6,15 +6,20 @@ import { AppComponent } from './app.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HeaderModule } from 'src/modules/common-modules/header/header.module';
+import { ConsoleModule } from 'src/modules/common-modules/console/console.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    HeaderModule,
+    ConsoleModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -23,7 +28,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
       }
     })
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

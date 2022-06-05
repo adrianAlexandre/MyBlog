@@ -1,0 +1,17 @@
+@import "~src/styles/settings/_variables.scss";
+@import "~bootstrap/dist/css/bootstrap.css";
+.header{
+    background-color: var(--primary-dark);
+    color: var(--white);
+    justify-content: flex-start;
+    direction: rtl;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+.menu-icon{
+    color: var(--white);
+    width: 32px;
+    height: 32px;
+}

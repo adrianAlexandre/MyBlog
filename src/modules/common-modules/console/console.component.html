@@ -1,0 +1,11 @@
+<div class="component-fluid console">
+  <div class="container">
+    <div class="row" id="{{consoleId}}" *ngFor="let consoleLine of consoleContent; index as i">
+      <div class="col-md-12">
+        <app-console-line [lineContent]="consoleLine.content" [lineNumber]="i"
+          [cursorPosition]="consoleLine.cursorPosition">
+        </app-console-line>
+      </div>
+    </div>
+  </div>
+</div>
