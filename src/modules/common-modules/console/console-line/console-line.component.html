@@ -1,10 +1,9 @@
 <div class="row">
-  <div class="col-12">
-    <div class="line-number">
-      <span class="line-number-text">{{lineNumber}}</span>
-    </div>
+  <div class="col-12 d-flex align-items-center" [ngClass]="{'current-line': cursorPosition !== -1}"
+    [id]="lineNumber.toString()">
+    <span class="line-number-text">{{lineNumber}}</span>
 
-    <div [innerHtml]="lineContent" [id]="lineNumber.toString()" class="code code-text">
+    <div [innerHtml]="lineContent" class="code ">
     </div>
 
 

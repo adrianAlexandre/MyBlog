@@ -2,17 +2,38 @@
     width: 2em;
     display: inline-block;
     color: var(--secondary-blue);
+    vertical-align: middle;
+    height: 17px;
+    display: inline-block;
+}
+.line-number-text {
+  display: inline-block;
+  color: var(--secondary-blue);
+  width: 2em;
+  font-size: 1em;
+  line-height: normal;
+  display: inline-block;
 }
 .code {
+    font-size: 1em;
     display: inline-block;
     color: var(--white);
     border-spacing: 0px;
     white-space: 0px;
     letter-spacing: 0px;
-    height: 0.8em;
+    //height: 0.8em;
+    line-height: 19px;
+    padding: 0;
+    font-stretch: extra-condensed;
+    
 }
 .col-12{
-    height: 1em;
+  height: 19px;
+}
+.col-12 > span{
+  line-height: 19px;
+  //display:  block;
+  vertical-align: middle;
 }
 @keyframes cursor-blink {
     0% {
@@ -25,4 +46,13 @@
   width: 7px;
   height: 1em;
   display: inline-block;
+}
+.current-line {
+    background-color: var(--primary-light);
+}
+span{
+  font-size: 1em;
+  line-height: 19px;
+  display: inline-block;
+  vertical-align: middle;
 }
