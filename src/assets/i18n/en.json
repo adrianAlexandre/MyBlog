@@ -1,6 +1,9 @@
 {
     "about-me":{
         "title": "About Me",
-        "header": "Hi! my name is \n<span class='code-green'>Adrian Alexandre</span>\nand I'm a <span class='code-red'>Developer</span>"
-    }
+        "header": "Hi! my name is \n<span class='code-green'>Adrian Alexandre</span>\nand I'm a <span class='code-red'>Developer</span>",
+        "presentation-title": "Presentation",
+        "presentation-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu erat vehicula, imperdiet nunc id, fringilla tortor. Cras euismod, elit vel bibendum vestibulum, sapien nisl consectetur felis."
+
+      }
 }

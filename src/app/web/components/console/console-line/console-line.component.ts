@@ -9,6 +9,8 @@ export class ConsoleLineComponent implements OnInit {
   @Input() lineContent: string = "";
   @Input() lineNumber: number = 0;
   @Input() cursorPosition: number = -1;
+  @Input() isHeader: boolean = false;
+
   constructor() {
     this.printCursor();
   }

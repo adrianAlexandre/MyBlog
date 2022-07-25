@@ -1,0 +1,59 @@
+@import "../../../../styles/settings/variables";
+
+.main-container{
+  background-color: #F4F8FF;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.inner-container{
+  background-color: white;
+  height: 100%;
+  padding: 3.5em;
+}
+
+h2{
+  color: var(--secondary-red);
+  font-family: 'nunito';
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.portrait{
+  height: 20em;
+  width:15em;
+  background-color: rgb(211, 211, 211);
+  margin-bottom: 8em;
+  position: relative;
+  top: -8em;
+
+}
+.portrait-col{
+  display: flex;
+  direction: ltr;
+  margin-left: 20%;
+}
+
+
+
+.col-sm-4 {
+  margin: 0;
+  padding-left: 0!important;
+  padding-right: 0!important;
+
+
+}
+.col-s-12 {
+  margin: 0;
+  padding-left: 0!important;
+  padding-right: 0!important;
+
+}
+.col-6{
+  margin: 0;
+  padding-left: 0!important;
+  padding-right: 0!important;
+
+}

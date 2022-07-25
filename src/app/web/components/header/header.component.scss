@@ -7,11 +7,27 @@
     direction: rtl;
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0!important;
+}
+.sub-header{
+  background-color: var(--primary-dark);
+  color: var(--white);
+  justify-content: flex-start;
+  direction: rtl;
+  display: flex;
+  margin: 0;
+  padding: 0!important;
 
 }
 .menu-icon{
     color: var(--white);
     width: 32px;
     height: 32px;
+}
+.bread-crumb{
+  display: flex;
+  direction: ltr;
+  padding: 0!important;
+  margin: 0;
+  font-size: 0.7em;
 }

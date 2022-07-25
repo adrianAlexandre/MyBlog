@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-12">
-    <div class="line-number">
+    <div [ngClass]="isHeader === true ? 'header':''" class="line-number">
       <span class="line-number-text">{{lineNumber}}</span>
     </div>
 

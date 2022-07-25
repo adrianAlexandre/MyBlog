@@ -1,0 +1,16 @@
+<div [ngClass]="isHeader === true ? 'header':''" class="container-fluid console">
+  <div class="container console-container">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row" id="{{consoleId}}" *ngFor="let consoleLine of consoleContent; index as i">
+          <div class="col-md-12">
+            <app-console-line [isHeader]="isHeader" [lineContent]="consoleLine.content" [lineNumber]="i"
+              [cursorPosition]="consoleLine.cursorPosition">
+            </app-console-line>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

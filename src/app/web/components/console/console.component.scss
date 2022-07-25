@@ -1,0 +1,29 @@
+@import "~src/styles/settings/_variables.scss";
+@import "~bootstrap/dist/css/bootstrap.css";
+.console{
+    background-color: var(--primary);
+    color: var(--white);
+    margin: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+
+    font-family: nunito;
+    font-size: 1em;
+}
+
+.console{
+    padding-top: 0;
+    padding-bottom: 0;
+
+    background-color: #122E59;
+}
+.console-container{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: var(--primary);
+
+}
+.header {
+  font-size: 25px;
+  font-weight: bold;
+}

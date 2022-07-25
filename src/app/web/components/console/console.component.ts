@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-console',
@@ -6,24 +6,26 @@ import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./console.component.scss']
 })
 export class ConsoleComponent implements OnInit, AfterViewInit {
+  @Input() isHeader: boolean = false;
   @Input() code: string = "";
   @Input() consoleId: string = "";
   @Input() cursorPosition: number[] = [];
   consoleContent: [{ content: string, cursorPosition: number }] = [{ content: "", cursorPosition: -1 }];
 
-  constructor() {
-    alert("");
-    this.printCode();
-
+  constructor(private cdRef:ChangeDetectorRef) {
+    //this.printCode();
   }
   ngOnInit(): void {
     this.printCode();
   }
   ngAfterViewInit(): void {
-    this.printCode();
+    //this.printCode();
   }
   ngOnChange() {
-    this.printCode();
+    //this.printCode();
+  }
+  ngAfterViewChecked(){
+    this.cdRef.detectChanges();
   }
 
   printCode() {

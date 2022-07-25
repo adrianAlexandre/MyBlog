@@ -1,0 +1,28 @@
+<div class="d-flex h-100 flex-column">
+<app-header></app-header>
+<app-console [consoleId]="'consoleHeader'" [isHeader]="true" [code]="this.header" [cursorPosition]="[2,0]"></app-console>
+
+<!-- <app-presentation-container></app-presentation-container> -->
+<div class="main-container container-fluid">
+
+  <div class="inner-container container">
+    <div class="row">
+      <div class="col-sm-4 col-s-12 col-6">
+        <h2>
+          {{'about-me.presentation-title' | translate}}
+        </h2>
+        <p>
+          {{'about-me.presentation-content' | translate}}
+        </p>
+      </div>
+
+      <div class="col portrait-col">
+        <div class="portrait">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
