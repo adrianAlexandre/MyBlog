@@ -1,0 +1,43 @@
+<div class="star-list-container" >
+  <div class="row"  >
+    <div class="col" *ngFor="let column of columnsShown">
+      <div class="row">
+        <h2><span [style.color]="column.titleColor" class="tag">&lt;</span> {{column.title}}   <span [style.color]="column.titleColor" class="tag">/&gt;</span>
+        </h2>
+      </div>
+      <div class="row" >
+        <div class="line-col" >
+        <div>
+          <div *ngFor="let item of column.items" class="box"  [@pageAnimations]="columnsShown.length">
+            <div class="circle-box">
+              <div class="outside-circle" @outside-circle>
+              </div>
+              <div class="inner-circle" @inner-circle>
+              </div>
+              <div *ngIf="column.items.indexOf(item)<column.items.length-1" @line class="line" >
+            </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="icon-col">
+          <div *ngFor="let item of column.items" class="box">
+            <img src="{{item.icon}}" alt="{{item.description}}" class="icon" @icon>
+          </div>
+        </div>
+        <div class="span-col">
+          <div *ngFor="let item of column.items" class="box">
+            <span>
+              {{item.description}}
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

@@ -14,15 +14,35 @@
         <p>
           {{'about-me.presentation-content' | translate}}
         </p>
+        <app-button [label]="'Contact Me!'" [color]="BUTTON_COLOR.PRIMARY"></app-button>
       </div>
 
       <div class="col portrait-col">
-        <div class="portrait">
+        <!-- <div class="portrait">
 
-        </div>
+        </div> -->
       </div>
 
     </div>
   </div>
+</div>
+<div class="skills-container container-fluid">
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <h5>What I can do</h5>
+      <app-star-list [columns]="starListContent">
+
+      </app-star-list>
+    </div>
+    <div class="col">
+      <app-star-list>
+
+      </app-star-list>
+    </div>
+  </div>
+
+
+</div>
 </div>
 </div>

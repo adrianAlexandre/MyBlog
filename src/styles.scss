@@ -1,5 +1,13 @@
 @import "./styles/settings/_variables.scss";
 @import "~bootstrap/dist/css/bootstrap.css";
+@font-face {
+  font-family: "RobotoMono";
+  src: local("RobotoMono"), url(./assets/fonts/RobotoMono-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"), url(./assets/fonts/Nunito-VariableFont_wght.ttf) format("truetype");
+}
 
 body{
     background-color: var(--primary);
@@ -18,6 +26,8 @@ body{
 .code-blue{
     color: var(--secondary-blue);
 }
+
+
 
 
 @keyframes cursor-blink {

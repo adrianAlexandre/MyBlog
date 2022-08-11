@@ -9,6 +9,8 @@ import { ConsoleLineComponent } from './components/console/console-line/console-
 import { HeaderComponent } from './components/header/header.component';
 import { SharedModule } from '../shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
+import { ButtonComponent } from './components/button/button.component';
+import { StarListComponent } from './components/star-list/star-list.component';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { TranslateModule } from '@ngx-translate/core';
     PresentationContainerComponent,
     ConsoleComponent,
     ConsoleLineComponent,
+    ButtonComponent,
+    StarListComponent,
 
   ],
   imports: [

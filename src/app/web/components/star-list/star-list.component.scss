@@ -1,0 +1,123 @@
+.star-list-container{
+  color: white;
+  margin-top:2em;
+  font-size: 12.2px;
+}
+h2{
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.inner-circle{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+  //margin: auto;
+  //transform: translateY(4px);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+.outside-circle{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  animation: circle-blink 2s infinite;
+  background-color: rgba(255, 255, 255, 0.5);
+  //margin: auto;
+  //transform: translateY(50%);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+
+}
+.circle-box{
+  position: relative;
+  width : 35px;
+  height : 35px;
+
+}
+@keyframes circle-blink {
+  0% {
+    background-color: rgba(255, 255, 255, 0.55);  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.4);  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.55);  }
+}
+
+.line{
+  height: 7em;
+  border: 0px ;
+  width: 1px;
+  border-color: white;
+  background-color: white;
+  //margin: auto;
+  // margin-top: -3px;
+  // margin-bottom: -3px;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  //transform: translate(0%, 0%);
+
+}
+.space-between{
+  height: 5em;
+}
+.space-between-icon{
+  height: 5em;
+}
+.icon{
+  //margin-top: -15%;
+  width: 35px;
+  height: 35px;
+}
+
+.icon-col{
+  width: 35px!important;
+  min-width: 35px!important;
+  max-width: 35px!important;
+  padding: 0;
+  margin: 0;
+
+}
+.line-col{
+  width: 35px!important;
+  min-width: 35px!important;
+  max-width: 35px!important;
+  padding: 0;
+  margin: 0;
+}
+.span-col{
+  width: fit-content;
+  min-width: 35px;
+  padding: 0;
+  margin: 0;
+}
+.box{
+  height: 35px;
+  margin-bottom: 4em;
+  min-width: 35px;
+  width: fit-content;
+
+
+}
+.span-col span{
+  line-height: 35px;
+  vertical-align: middle;
+  padding-left: 1em;
+  max-width: 10em;
+  max-height: 2em;
+  overflow: hidden;
+
+}
+
