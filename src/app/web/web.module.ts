@@ -11,6 +11,7 @@ import { SharedModule } from '../shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent } from './components/button/button.component';
 import { StarListComponent } from './components/star-list/star-list.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { StarListComponent } from './components/star-list/star-list.component';
     ConsoleLineComponent,
     ButtonComponent,
     StarListComponent,
+    FooterComponent,
 
   ],
   imports: [
@@ -34,6 +36,8 @@ import { StarListComponent } from './components/star-list/star-list.component';
     AboutMeComponent,
     PresentationContainerComponent,
     ConsoleComponent,
-    ConsoleLineComponent,  ]
+    ConsoleLineComponent,
+    FooterComponent
+    ]
 })
 export class WebModule { }

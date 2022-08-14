@@ -22,7 +22,7 @@ h2{
 h5{
   padding-top: 2em;
   color: white;
-  font-weight: normal;
+  font-weight: bold;
 
 }
 
@@ -42,14 +42,14 @@ h5{
 }
 
 .skills-container{
-  height: 4em;
   margin: 0;
   padding: 0;
+  padding-top: 2em;
   border: 0;
-  //border-radius: 3em 3em 0em 0em;
+  height: 30em;
   // position: relative;
   min-height: 25em;
-  background: linear-gradient(to bottom, rgba(5, 28, 64, 1) 0%, #193765 80%);
+  background: linear-gradient(to bottom, rgba(5, 28, 64, 1) 0%, #0d216f 80%);
 }
 
 .col-sm-4 {

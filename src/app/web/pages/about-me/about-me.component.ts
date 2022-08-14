@@ -13,7 +13,24 @@ export class AboutMeComponent implements OnInit {
   header: string="";
   iconsPath="/assets/images/icons/"
   public BUTTON_COLOR=BUTTON_COLOR;
-  public starListContent:StarListColumn[]=[{title:"Frontend",titleColor:"rgba(101, 251, 152, 1)",items:[{  description:"Angular",icon:this.iconsPath+"angular.svg"},{  description:"HTML",icon:this.iconsPath+"html-5.svg"},{  description:"CSS",icon:this.iconsPath+"css3.svg"},{  description:"Typescript",icon:this.iconsPath+"typescript.svg"}]},{title:"title",titleColor:"",items:[{  description:"string",icon:"/assets/images/icons/logos_angular-icon.svg"},{  description:"string",icon:"/assets/images/icons/logos_angular-icon.svg"}]}]
+  public skillsList:StarListColumn[]=[{title:"Frontend",titleColor:"rgba(101, 251, 152, 1)",
+  items:[{  description:"Angular",icon:this.iconsPath+"angular.svg"},
+  {  description:"HTML",icon:this.iconsPath+"html-5.svg"},
+  {  description:"CSS",icon:this.iconsPath+"css3.svg"},
+  {  description:"Typescript",icon:this.iconsPath+"typescript.svg"}]},
+  {title:"Backend",titleColor:"rgba(239, 101, 251, 1)",items:[{  description:"Java",icon:this.iconsPath+"java.svg"},
+  {  description:"Node JS",icon:this.iconsPath+"node-js.svg"}]},
+  {title:"Other Skills",titleColor:"rgba(251, 227, 101, 1)",
+  items:[{  description:"Figma",icon:this.iconsPath+"figma.svg"},
+  {  description:"Git",icon:this.iconsPath+"git.svg"},
+  ]}]
+
+  public toDoList:StarListColumn[]=[{title:"",titleColor:"rgba(101, 251, 152, 1)",
+  items:[{  description:"Angular",icon:this.iconsPath+"angular.svg"},
+  {  description:"HTML",icon:this.iconsPath+"html-5.svg"},
+  {  description:"CSS",icon:this.iconsPath+"css3.svg"},
+  {  description:"Typescript",icon:this.iconsPath+"typescript.svg"}]},
+  ]
 
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('en');

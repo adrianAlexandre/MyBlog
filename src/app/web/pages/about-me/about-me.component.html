@@ -29,14 +29,18 @@
 <div class="skills-container container-fluid">
 <div class="container">
   <div class="row">
-    <div class="col-4">
+    <div class="col-6">
       <h5>What I can do</h5>
-      <app-star-list [columns]="starListContent">
+      <app-star-list [columns]="skillsList">
 
       </app-star-list>
     </div>
     <div class="col">
-      <app-star-list>
+
+    </div>
+    <div class="col-5">
+      <h5>What I plan to do</h5>
+      <app-star-list [columns]="toDoList">
 
       </app-star-list>
     </div>
@@ -46,3 +50,4 @@
 </div>
 </div>
 </div>
+

@@ -8,6 +8,7 @@ button{
   text-align: center;
   font-size: 1em;
   border-width: 2px;
+
   font-weight: 500;
   padding: 0;
   margin: 0;
@@ -30,10 +31,12 @@ button{
 .primary_btn:hover{
   color: white;
   background-color: var(--primary);
+
 }
 .primary_btn{
   color: var(--primary);
   border-color: var(--primary);
+  border-width: 2px;
 }
 .primary_btn .tag{
   color: var(--secondary-green);
