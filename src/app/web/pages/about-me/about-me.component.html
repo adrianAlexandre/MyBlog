@@ -1,29 +1,42 @@
 <div class="d-flex h-100 flex-column">
 <app-header></app-header>
-<app-console [consoleId]="'consoleHeader'" [isHeader]="true" [code]="this.header" [cursorPosition]="[2,0]"></app-console>
 
 <!-- <app-presentation-container></app-presentation-container> -->
 <div class="main-container container-fluid">
 
   <div class="inner-container container">
     <div class="row">
-      <div class="col-sm-4 col-s-12 col-6">
-        <h2>
-          {{'about-me.presentation-title' | translate}}
-        </h2>
-        <p>
-          {{'about-me.presentation-content' | translate}}
-        </p>
-        <app-button [label]="'Contact Me!'" [color]="BUTTON_COLOR.PRIMARY"></app-button>
+      <div class="col-6 presentation-container">
+        <div class="row">
+          <div class="col">
+            <app-console-window [consoleId]="'consoleHeader'" [isHeader]="true" [code]="this.header" [cursorPosition]="[2,0]"></app-console-window>
+
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <p class="mb-4">
+              {{'about-me.presentation-content' | translate}}
+            </p>
+            <app-button (click)="scrollToForm()" onclick="scrollToForm()" [label]="'Contact Me!'" [color]="BUTTON_COLOR.PRIMARY"></app-button>
+          </div>
+
+          <div class="col">
+
+          </div>
+
+        </div>
       </div>
+      <div class="col">
+        <div class="portrait">
 
-      <div class="col portrait-col">
-        <!-- <div class="portrait">
-
-        </div> -->
+        </div>
       </div>
-
     </div>
+
+
+
   </div>
 </div>
 <div class="skills-container container-fluid">
@@ -45,9 +58,36 @@
       </app-star-list>
     </div>
   </div>
+  <div class="row">
+    <div class="col-6">
+      <h5>My work experience</h5>
+      <app-star-list [columns]="workExperience">
+
+      </app-star-list>
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+</div>
+</div>
+<div class="container-fluid contact-form-container" id="contact-form">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col-8">
+        <h5>Contact Me!</h5>
+        <div class="contact-form">
+
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
 
 
 </div>
 </div>
-</div>
+<app-footer></app-footer>
 

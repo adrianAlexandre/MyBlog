@@ -9,9 +9,14 @@
 .inner-container{
   background-color: white;
   height: 100%;
-  padding: 3.5em;
+  padding: 0;
+  padding-right: 0;
 }
-
+.presentation-container{
+  margin-top: 3em;
+  margin-left: 5em;
+  margin-bottom: 5em;
+}
 h2{
   color: var(--secondary-red);
   font-family: 'nunito';
@@ -27,18 +32,16 @@ h5{
 }
 
 .portrait{
-  height: 20em;
-  width:15em;
-  background-color: rgb(211, 211, 211);
-  margin-bottom: 8em;
+  height: 100%;
+  width:100%;
+  background-color: rgb(153, 191, 210);
   position: relative;
-  top: -8em;
+
 
 }
 .portrait-col{
   display: flex;
   direction: ltr;
-  margin-left: 20%;
 }
 
 .skills-container{
@@ -46,10 +49,20 @@ h5{
   padding: 0;
   padding-top: 2em;
   border: 0;
-  height: 30em;
+
   // position: relative;
   min-height: 25em;
-  background: linear-gradient(to bottom, rgba(5, 28, 64, 1) 0%, #0d216f 80%);
+  background: linear-gradient(to bottom, #051C40 20%, #183765 100%);
+}
+.contact-form-container{
+  min-height: 4em;
+  background-color: #041329;
+}
+.contact-form{
+  min-height: 8em;
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+  border-radius: 5px;
 }
 
 .col-sm-4 {
@@ -66,8 +79,9 @@ h5{
 
 }
 .col-6{
-  margin: 0;
+  //margin: 0;
   padding-left: 0!important;
   padding-right: 0!important;
 
 }
+

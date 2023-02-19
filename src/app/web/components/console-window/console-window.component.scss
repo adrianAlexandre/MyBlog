@@ -1,0 +1,35 @@
+.window{
+  border-radius: 8px !important;
+  margin: 0;
+  padding: 3px;
+  position: absolute;
+  // left: -8%;
+  // transform: translate(0%, 0%);
+  background-color: var(--primary-dark);
+  box-shadow: 2px 4px 4px 0px rgba(0,0,0,0.4);
+  width: 25em;
+}
+.window-container{
+  position: relative;
+  height: 9em;
+  border:solid white 2px;
+  margin-bottom: 2em;
+  max-width: 25em;
+
+
+}
+.bar{
+  background-color: var(--primary-dark);
+  width: auto;
+
+}
+img{
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+  margin-bottom: 2px;
+}
+.button-col{
+  padding: 0;
+}
+

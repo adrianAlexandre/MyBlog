@@ -12,17 +12,28 @@
 }
 
 .console{
-    padding-top: 0;
     padding-bottom: 0;
+    padding-top: 0;
 
-    background-color: #122E59;
+    background-color: var(--primary);
+    border-radius: 8px;
 }
 .console-container{
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    background-color: var(--primary);
-
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--primary);
+  border-radius: 6px;
 }
 .header {
-  font-size: 25px;
+  font-size: 22px;
+  padding: 0;
+}
+.header .row{
+  padding: 0;
+}
+.header .container{
+  padding: 0;
+}
+.header .console-container{
+  background-color: var(--primary);
 }

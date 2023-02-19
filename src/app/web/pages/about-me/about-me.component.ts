@@ -32,6 +32,10 @@ export class AboutMeComponent implements OnInit {
   {  description:"Typescript",icon:this.iconsPath+"typescript.svg"}]},
   ]
 
+  public workExperience:StarListColumn[]=[{title:"",titleColor:"rgba(101, 251, 152, 1)",
+  items:[{  description:"Fullstack Developer",icon:this.iconsPath+"NTT-Data-Logo.svg"}]}
+  ]
+
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('en');
     translate.use('en');
@@ -44,6 +48,10 @@ export class AboutMeComponent implements OnInit {
   }
   setHeader(header: string) {
     this.header = header;
+  }
+  scrollToForm(){
+    const element = document.querySelector("#contact-form")
+    if (element) element.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
 }

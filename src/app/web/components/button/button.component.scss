@@ -30,12 +30,12 @@ button{
 }
 .primary_btn:hover{
   color: white;
-  background-color: var(--primary);
+  background-color: var(--primary-dark);
 
 }
 .primary_btn{
-  color: var(--primary);
-  border-color: var(--primary);
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
   border-width: 2px;
 }
 .primary_btn .tag{

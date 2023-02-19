@@ -27,7 +27,9 @@ body{
     color: var(--secondary-blue);
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 @keyframes cursor-blink {

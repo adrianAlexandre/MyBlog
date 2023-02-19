@@ -12,6 +12,9 @@ import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent } from './components/button/button.component';
 import { StarListComponent } from './components/star-list/star-list.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ConsoleWindowComponent } from './components/console-window/console-window.component';
+import { WorkListComponent } from './components/work-list/work-list.component';
+import { DynamicContainerComponent } from './components/dynamic-container/dynamic-container.component';
 
 
 @NgModule({
@@ -24,6 +27,9 @@ import { FooterComponent } from './components/footer/footer.component';
     ButtonComponent,
     StarListComponent,
     FooterComponent,
+    ConsoleWindowComponent,
+    WorkListComponent,
+    DynamicContainerComponent,
 
   ],
   imports: [
@@ -35,6 +41,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     AboutMeComponent,
     PresentationContainerComponent,
+    ConsoleWindowComponent,
     ConsoleComponent,
     ConsoleLineComponent,
     FooterComponent
