@@ -1,1 +1,13 @@
-<p>work-list works!</p>
+<div class="container-fluid work-experience">
+  <div class="container">
+    <h4>My Work Experience</h4>
+      <div class="work-experience-container" *ngFor="let item of workExperienceItems">
+        <h5>{{ item.jobTitle }}</h5>
+        <p class="subheading"><b>{{ item.company }}</b></p>
+        <p class="date"><b>{{ item.dates }}</b></p>
+        <ul class="highlights">
+          <li *ngFor="let highlight of item.highlights">{{ highlight }}</li>
+        </ul>
+      </div>
+  </div>
+</div>

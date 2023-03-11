@@ -1,0 +1,21 @@
+@import "~src/styles/settings/_variables.scss";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.work-experience{
+  background-color: white;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.work-experience-container{
+  margin-top: 2em;
+}
+h4{
+  color: var(--primary);
+}
+h2{
+  color: var(--primary-dark);
+}
+.subheading{
+  color: var(--primary);
+}

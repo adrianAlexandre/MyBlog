@@ -15,7 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ConsoleWindowComponent } from './components/console-window/console-window.component';
 import { WorkListComponent } from './components/work-list/work-list.component';
 import { DynamicContainerComponent } from './components/dynamic-container/dynamic-container.component';
-
+import { WaveSeparatorComponent } from './components/wave-separator/wave-separator.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { DynamicContainerComponent } from './components/dynamic-container/dynami
     ConsoleWindowComponent,
     WorkListComponent,
     DynamicContainerComponent,
+    WaveSeparatorComponent,
 
   ],
   imports: [

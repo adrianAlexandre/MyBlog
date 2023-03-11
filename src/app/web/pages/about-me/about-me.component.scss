@@ -49,7 +49,7 @@ h5{
   padding: 0;
   padding-top: 2em;
   border: 0;
-
+  height: 32em;
   // position: relative;
   min-height: 25em;
   background: linear-gradient(to bottom, #051C40 20%, #183765 100%);
@@ -58,6 +58,28 @@ h5{
   min-height: 4em;
   background-color: #041329;
 }
+.contact-form input{
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 1em;
+  width: 100%;
+  padding-left: 10px;
+
+}
+.contact-form textarea{
+  padding: 10px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
 .contact-form{
   min-height: 8em;
   margin-top: 1.5em;

@@ -43,7 +43,7 @@
 <div class="container">
   <div class="row">
     <div class="col-6">
-      <h5>What I can do</h5>
+      <h5>{{'about-me.habilities' | translate}}</h5>
       <app-star-list [columns]="skillsList">
 
       </app-star-list>
@@ -52,37 +52,34 @@
 
     </div>
     <div class="col-5">
-      <h5>What I plan to do</h5>
+      <h5>{{'about-me.plan' | translate}}</h5>
       <app-star-list [columns]="toDoList">
 
       </app-star-list>
     </div>
   </div>
-  <div class="row">
-    <div class="col-6">
-      <h5>My work experience</h5>
-      <app-star-list [columns]="workExperience">
 
-      </app-star-list>
-    </div>
-    <div class="col">
-
-    </div>
-  </div>
 </div>
 </div>
+
+<app-wave-separator></app-wave-separator>
+<app-work-list></app-work-list>
 <div class="container-fluid contact-form-container" id="contact-form">
   <div class="container">
     <div class="row">
-      <div class="col">
-      </div>
-      <div class="col-8">
-        <h5>Contact Me!</h5>
-        <div class="contact-form">
 
-        </div>
+      <div class="col-6">
+        <h5>{{'about-me.contact-me' | translate}}</h5>
+        <div class="contact-form">
+            <input type="email" name="from" placeholder="From:">
+
+
+            <input type="email" disabled="true" name="to" value="adrian.alexandre.aac@gmail.com">
+            <input type="text" name="about" placeholder="About:">
+            <textarea name="message" placeholder="Message area..."></textarea>
+            <app-button (click)="scrollToForm()" onclick="scrollToForm()" [label]="'Contact Me!'" [color]="BUTTON_COLOR.GREEN"></app-button>
+          </div>
       </div>
-      <div class="col"></div>
     </div>
   </div>
 
