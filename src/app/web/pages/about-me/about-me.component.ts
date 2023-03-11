@@ -1,6 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { AppComponent } from 'src/app/app.component';
 import { BUTTON_COLOR } from '../../components/button/button.component';
 import { StarListColumn } from '../../models/StarListColumn';
 
@@ -11,7 +10,7 @@ import { StarListColumn } from '../../models/StarListColumn';
 })
 export class AboutMeComponent implements OnInit {
   header: string="";
-  iconsPath="/assets/images/icons/"
+  iconsPath="./assets/images/icons/"
   public BUTTON_COLOR=BUTTON_COLOR;
   public skillsList:StarListColumn[]=[{title:"Frontend",titleColor:"rgba(101, 251, 152, 1)",
   items:[{  description:"Angular",icon:this.iconsPath+"angular.svg"},

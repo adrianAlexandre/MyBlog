@@ -36,5 +36,5 @@ import { SharedModule } from './shared/shared.module';
 })
 export class AppModule { }
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
